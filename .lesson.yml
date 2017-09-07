@@ -1,0 +1,7 @@
+---
+title: "Cohort Statistics"
+type: "challenge"
+description: "OOP System Check"
+tags: "system-check, oop, rspec"
+ignore:
+- "cohort-stats.md"
