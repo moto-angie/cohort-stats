@@ -11,7 +11,7 @@ describe SystemCheck do
   let(:jed) { Student.new("Josiah Barlett", "josiah.bartlett@gmail.com") }
 
 
-  xdescribe "#average_grade" do
+  describe "#average_grade" do
     it "returns the average score for all submissions" do
       submission_1 = SystemCheckSubmission.new("binding.pry", zoey)
       system_check.add_submission(submission_1)
@@ -34,7 +34,7 @@ describe SystemCheck do
     end
   end
 
-  xdescribe "#did_student_complete_system_check?" do
+  describe "#did_student_complete_system_check?" do
     it "returns 'true' if a submission exists for that student" do
       system_check = SystemCheck.new("Grocery List using Postgres", Date.parse("2020/08/28"))
       submission_1 = SystemCheckSubmission.new("Bounding Box", charlie)

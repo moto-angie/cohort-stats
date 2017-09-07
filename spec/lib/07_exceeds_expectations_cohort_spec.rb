@@ -17,7 +17,7 @@ describe Cohort do
     cohort
   end
 
-  xdescribe "#system_check_completed?" do
+  describe "#system_check_completed?" do
     it "returns 'true' if everyone has submitted" do
       sam = cohort_with_students.students.first
       josh = cohort_with_students.students[1]

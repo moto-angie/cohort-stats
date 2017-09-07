@@ -30,4 +30,20 @@ class Cohort
     end
     roster_string
   end
+
+  def system_check_completed?(system_check)
+    completed = false
+    total_submissions = 0
+
+    @students.each do |student|
+      if system_check.submissions.any? { |submission| submission.student == student }
+        total_submissions += 1
+      end
+    end
+
+    if total_submissions == @students.size
+      completed = true
+    end
+    completed
+  end
 end

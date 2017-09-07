@@ -6,7 +6,7 @@ describe SystemCheckSubmission do
     SystemCheckSubmission.new("awesome solution", student)
   end
 
-  xdescribe "#assign_grade" do
+  describe "#assign_grade" do
     it "sets the grade for an submission" do
       grade = Grade::MEETS_EXPECTATIONS
       submission.assign_grade(grade)
@@ -18,7 +18,7 @@ describe SystemCheckSubmission do
     end
   end
 
-  xdescribe "#graded?" do
+  describe "#graded?" do
     it "returns 'false' if the submission has not been graded" do
       expect(submission.graded?).to eq(false)
     end
